@@ -39,7 +39,7 @@ export default function Home({
       </div>
       <div id="main-content" className="flex justify-center gap-[5rem] px-[5rem] max-[1152px]:gap-[3rem] max-[1152px]:px-[3rem] max-[1052px]:px-[2rem] max-[1052px]:gap-[2rem]">
         <div className="flex justify-center align-center w-[100%] h-[20rem]">
-          <img src={dataValue.flag && dataValue.flags.png && dataValue.flags.svg} alt="" className="w-[100%] h-[100%]" />
+          <Image src={dataValue.flag && dataValue.flags.png && dataValue.flags.svg} alt={`${dataValue.name}`} className="w-[100%] h-[100%]" />
         </div>
         <div className="flex flex-col w-[100%] gap-[1.5rem]">
           <h1 className="text-[--Very-Dark-Blue] dark:text-[--White] text-[25px] font-extrabold">{dataValue.name}</h1>
