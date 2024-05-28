@@ -60,8 +60,8 @@ export default function Home({
           <div className="flex gap-[1rem]">
             <h3 className="text-[--Very-Dark-Blue] dark:text-[--White] text-[15px] font-bold">Border Countries:</h3>
             <div className="flex gap-[0.5rem] align-center flex-wrap">
-              {dataValue.borders?.map((item) => {
-                return <span className="bg-[--Dark-Blue] px-[1rem] shadow-lg cursor-pointer">{item}</span>
+              {dataValue.borders?.map((item, key) => {
+                return <span key={key} className="bg-[--Dark-Blue] px-[1rem] shadow-lg cursor-pointer">{item}</span>
               })}
             </div>
           </div>
